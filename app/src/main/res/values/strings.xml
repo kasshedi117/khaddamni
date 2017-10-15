@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Khaddamni</string>
+    <string name="app_decription">Lel battala el kol</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_passwordConfirm">Confirm Password</string>
+    <string name="prompt_firstSearch">Ville</string>
+    <string name="prompt_secondSearch">Clé</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Register</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_search">Search</string>
+    <string name="action_register">Register</string>
+    <string name="different_login">or</string>
+    <string name="choice_Favourite">Favourite</string>
+    <string name="choice_applied">Applied for</string>
+    <string name="back">back</string>
+    <string name="confirm"> confirm</string>
+    <string name="old_password"> Old Password</string>
+    <string name="new_password"> New Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

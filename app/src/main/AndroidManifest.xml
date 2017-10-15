@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kass.khaddamni.khaddamni">
+
+    <uses-sdk
+        android:minSdkVersion="2"
+        android:targetSdkVersion="22"
+        tools:overrideLibrary="br.com.jpttrindade.tagview" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/default_offer"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AllActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".AddOffreActivity" />
+        <activity android:name=".OfferActivity" />
+        <activity android:name=".AddSkillsActivity" />
+        <activity android:name=".AddExperienceActivity" />
+        <activity android:name=".OfferWithUsersActivity" />
+        <activity android:name=".AddUserSkillsActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,220 @@
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:fab="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/background2"
+tools:context="com.kass.khaddamni.khaddamni.fragments.ProfileFragment">
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/lkol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#88d3d3d3">
+
+        <RelativeLayout
+            android:id="@+id/lfouk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile"/>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+
+        android:id="@+id/menu_down"
+        app:menu_colorNormal="@color/blue_900"
+
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="top|right"
+        android:layout_margin="10dp"
+        android:elevation="6dp"
+
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_fab_size="mini"
+        fab:menu_openDirection="down">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/addSkills"
+            fab:fab_size="mini"
+            fab:fab_label="Add Skills" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/buttonAddExperience"
+            app:fab_colorRipple="@color/blue_a700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            fab:fab_size="mini"
+            fab:fab_label="add Experience" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/updateProfileImage"
+            app:fab_colorRipple="@color/blue_a700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            fab:fab_size="mini"
+            fab:fab_label="update profile image" />
+
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+            <TextView
+                android:textColor="@color/blue_900"
+                android:textSize="20dp"
+                android:id="@+id/a"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageProfile"
+                android:text="First name and last name:"/>
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a"
+            android:text="Nom et prenom:"/>
+            <TextView
+                android:textColor="@color/blue_900"
+                android:textSize="20dp"
+                android:id="@+id/b"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName"
+                android:text="Date of birth:"/>
+        <TextView
+            android:id="@+id/textViewBirthDate"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b"
+            android:text="Date of birth:"/>
+            <TextView
+                android:textColor="@color/blue_900"
+                android:textSize="20dp"
+                android:id="@+id/textNumber"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewBirthDate"
+                android:text="phone number:"/>
+            <TextView
+                android:id="@+id/textViewNumber"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textNumber"
+                android:text="number:"/>
+
+            <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/c"
+            android:text="Email:"/>
+
+            <TextView
+                android:textColor="@color/blue_900"
+                android:textSize="20dp"
+                android:id="@+id/c"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:layout_below="@+id/textViewNumber"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/skillsLkol"
+            android:layout_below="@+id/lfouk"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textSkills"
+
+                android:textColor="@color/blue_900"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills and knowledge:"/>
+            <LinearLayout
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/textSkills"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                >
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/experience"
+           android:layout_below="@+id/skillsLkol"
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+            <TextView
+                android:id="@+id/textExperience"
+                android:textColor="@color/blue_900"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experiences and internships:"/>
+            <ListView
+                android:layout_below="@+id/textExperience"
+                android:nestedScrollingEnabled="true"
+                android:id="@+id/listExperience"
+                android:dividerHeight="5dp"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none"
+                android:layout_margin="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>
+

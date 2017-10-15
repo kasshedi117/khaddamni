@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="5dp"
+   android:background="@drawable/layout_list"
+
+    android:alpha = "0.9"
+    android:padding="5dp" >
+
+
+    <RelativeLayout
+        android:id="@+id/lkol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+           >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reste"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+
+
+            android:layout_toRightOf="@+id/imageContainer">
+
+<TextView
+    android:id="@+id/textViewTitre"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="titre"/>
+            <RelativeLayout
+                android:id="@+id/starWosstani"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imagePosition"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/position"/>
+                <TextView
+                    android:id="@+id/textViewPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imagePosition"
+                    android:layout_marginLeft="10dp"
+                    android:text="place"/>
+
+                <ImageView
+                    android:id="@+id/imageDate"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/time"
+                    android:layout_toRightOf="@+id/textViewPlace"
+
+                   />
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageDate"
+                    android:layout_marginLeft="10dp"
+                    android:text="date"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/louta"
+
+                android:layout_marginBottom="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Owner: Omar"/>
+
+            </RelativeLayout>
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/imageLike"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"
+
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignTop="@+id/textViewTitre"
+                app:btn_color="@android:color/darker_gray"
+                app:btn_fill_color="#FF6666"
+                app:allow_random_color="false"
+                app:enable_flashing="false"
+                app:big_shine_color="#FF6666"
+                app:click_animation_duration="200"
+                app:shine_animation_duration="1500"
+                app:shine_turn_angle="10"
+                app:small_shine_offset_angle="20"
+
+                app:small_shine_color="#CC9999"
+                app:shine_count="8"
+                app:siShape="@raw/heart"/>
+
+            <TextView
+                android:id="@+id/countApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+
+                android:text="apliers: 20"/>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/layout_list"
+    android:padding="10dp" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/lfouk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textViewDuree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Duree"/>
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/wosst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lfouk"
+               >
+            <TextView
+                android:id="@+id/textViewTitre"
+                android:textColor="@color/blue_900"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:text="titre"
+                />
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/louta"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wosst">
+            <TextView
+                android:id="@+id/textViewCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company:"/>
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textViewCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

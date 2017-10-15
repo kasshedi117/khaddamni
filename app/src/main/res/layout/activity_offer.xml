@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_offer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:background="@drawable/background2"
+    tools:context="com.kass.khaddamni.khaddamni.OfferActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/lkol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AAd3d3d3"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+           android:id="@+id/elTitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+<ImageView
+    android:id="@+id/imageOffre"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:elevation="5dp"
+
+    android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:textSize="35dp"
+                android:layout_below="@+id/imageOffre"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:text="Titre"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#37474F"/>
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+
+                android:id="@+id/like"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignTop="@+id/title"
+                app:btn_color="@android:color/darker_gray"
+                app:btn_fill_color="#FF6666"
+                app:allow_random_color="false"
+                app:enable_flashing="false"
+                app:big_shine_color="#FF6666"
+                app:click_animation_duration="200"
+                app:shine_animation_duration="1500"
+                app:shine_turn_angle="10"
+                app:small_shine_offset_angle="20"
+
+                app:small_shine_color="#CC9999"
+                app:shine_count="8"
+                app:siShape="@raw/heart"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/dateEtPlace"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/elTitre">
+            <ImageView
+                android:id="@+id/imageDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/date"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_toRightOf="@+id/imageDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="la date"/>
+            <ImageView
+                android:id="@+id/imagePlace"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/position"
+                android:layout_toRightOf="@+id/date"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/place"
+                android:layout_toRightOf="@+id/imagePlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="place"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lelDescription"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/dateEtPlace"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/elDescription"
+                android:text="Description:"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#37474F"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@drawable/layout_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/elDescription"
+                android:text="lyoum mchit ye5i jit w mchit w jit w mchit w jit w mchit wjit w mchit w jit w mchit w jit."
+                android:textSize="20dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lelSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lelDescription">
+            <TextView
+                android:id="@+id/skillsRequired"
+                android:text="Skills required:"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#37474F"
+                android:textStyle="bold|italic"/>
+            <LinearLayout
+                android:id="@+id/skills"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_below="@+id/skillsRequired"
+                android:background="@drawable/layout_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                ></LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lelSkills"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/buttonAplly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply for this offer"
+                android:padding="5dp"
+
+                style="@style/RbButton.Inverse.Rounded.Gray"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

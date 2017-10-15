@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2D4DC"
+    android:padding="20dp">
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/uploadImage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        fbutton:buttonColor="@android:color/holo_green_dark"
+        fbutton:shadowColor="@android:color/holo_green_dark"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        fbutton:cornerRadius="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Upload image"
+
+        />
+
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:id="@+id/dialog_imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/uploadImage"
+        android:src="@drawable/profile_default" />
+    <RelativeLayout
+        android:id="@+id/boutons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_imageview"
+        android:layout_centerHorizontal="true">
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/cancelUpload"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            fbutton:buttonColor="@android:color/holo_green_dark"
+            fbutton:shadowColor="@android:color/holo_green_dark"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+
+
+            android:text="Cancel"
+
+
+            />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/confirmUpload"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        fbutton:buttonColor="@android:color/holo_green_dark"
+        fbutton:shadowColor="@android:color/holo_green_dark"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        fbutton:cornerRadius="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/cancelUpload"
+
+        android:text="Upload image"
+
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

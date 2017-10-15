@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@drawable/background2"
+    tools:context="com.kass.khaddamni.khaddamni.fragments.SettingsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/lkol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="100"
+        >
+        <RelativeLayout
+            android:id="@+id/elLista"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="45">
+            <ListView
+                android:id="@+id/listViewSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_centerVertical="true"
+                android:dividerHeight="10.0sp">
+
+
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="50">
+
+            <TextView
+                android:id="@+id/textViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="@color/app_primary_dark"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="45dp"
+                android:clickable="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textViewDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/app_decription"
+                android:textColor="@color/grey_900"
+                android:layout_below="@+id/textViewLogo"
+                android:layout_alignRight="@+id/textViewLogo"
+                android:layout_alignEnd="@+id/textViewLogo" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

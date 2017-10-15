@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.github.akashandroid90.imageletter.MaterialLetterIcon
+                android:id="@+id/imageProfile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:shape_color="@color/amber_50"
+                app:shape_type="circle"
+
+                app:letter="A"
+                app:letter_color="@color/blackTransp"
+                app:letter_size="26"
+                app:letters_number="1"
+                app:initials="false"
+                app:initials_number="2"
+                app:corner_radius="1dp"
+                app:is_oval="true"
+                app:border_width="1dp"
+                app:border_color="@color/blackTransp"
+
+          />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lastname and FirstName"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+                    android:id="@+id/Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <ImageView
+                android:id="@+id/etat"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/waiting"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/refuse"
+                style="@style/RbButton.Inverse.Rounded.Red"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refuse"/>
+            <Button
+                android:id="@+id/accept"
+                style="@style/RbButton.Inverse.Rounded.Green"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/gmail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/gmail"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
